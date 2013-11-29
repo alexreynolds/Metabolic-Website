@@ -1,0 +1,437 @@
+/* Global stylesheet for Metabolic website */
+
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #8a8683;
+	background-color:#ffffff;
+	height: 100%;
+	width: 100%;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #f68f67;
+	text-decoration: none;
+	-webkit-transition:color 0.3s ease-in;  
+   -moz-transition:color 0.3s ease-in;  
+   -o-transition:color 0.3s ease-in;  
+   transition:color 0.3s ease-in;  
+}
+a:hover {
+	color: #bde2df;
+	text-decoration: none;
+}
+a:visited {
+	color: #f68f67;
+	text-decoration: none;
+}
+
+
+/* Navigation */
+
+.navigation {
+	width: 70px;
+	background: #333;
+	min-width: 70px;
+	max-width: 70px;
+	height: 100%;
+	position: fixed;
+	padding: 0;
+	left: -70px;	/* Should only appear after scroll past 1st slide */
+	-webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+}
+
+.side-nav {
+}
+
+.side-nav li, a {
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin: 0;
+	z-index: 1000;
+}
+
+.side-nav a:visited {
+	color: #fff;
+}
+
+.side-nav a:hover {
+	color: #f05557;
+}
+
+.side-nav .active {
+	background: #f05557;
+	color: #fff;
+}
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	padding:140px 0;
+	padding-left: 150px;	/* To account for nav bar */
+}
+
+
+
+/* Slide 1 - Inspirational quotes shit */ 
+
+#slide1{
+	background-image: url('../img/slide1/background_01.jpg');
+	transition: background-image 2s ease-in-out;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color:#333;
+	height: 100%;
+	width:100%;
+	overflow: hidden;
+	text-align: center;
+	padding-left: 0px;
+}
+#slide1 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#fff;
+	font-weight: 700;
+}
+#slide1 h2 {
+	font-size: 2em;
+	color: #8a8683;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#slide1 .bgchange {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 45%;
+}
+
+/* Left arrow */
+#slide1 #left {
+	left: 3%;
+	float: left;
+}
+
+/* Right arrow */
+#slide1 #right {
+	right: 3%;
+	float: right;
+}
+
+
+/* Slide 2 - About & Philosophy */ 
+
+#slide2{
+	background-color:#f05557;
+	color:#ffffff;
+	padding-left: 80px;
+}
+#slide2 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#ffffff;
+	font-weight: 700;
+	line-height: 1.2em;
+}
+#slide2 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#slide2 #philosophy {
+	padding-top: 20%;
+}
+
+
+
+
+/* Slide 3 - Activities Overview */ 
+
+#slide3{
+	background-color:#252525;
+	background-image: url('../img/networkweb_faded.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide3 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#fff;
+	font-weight: 700;
+}
+#slide3 h2 {
+	font-size: 2em;
+	color: #8a8683;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+
+
+/* Slide 4 - Actvities Detail 1 */
+
+#slide4{
+	background-color:#3d3e3e;
+	color:#ffffff;
+}
+#slide4 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#ffffff;
+	font-weight: 700;
+}
+#slide4 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+/* Slide 5 - Activities Detail 2 */
+
+#slide5{
+	background-color:#7f7f80;
+	background-image: url('../img/networkweb_faded.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color:#ffffff;
+}
+#slide5 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#3d3e3e;
+	font-weight: 700;
+}
+#slide5 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+/* Slide 6 - Activities Detail 3 */
+
+#slide6{
+	background-color:#c8c8c8;
+	color:#3d3e3e;
+}
+#slide6 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#3d3e3e;
+	font-weight: 700;
+}
+#slide6 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+/* Slide 7 - Activities Detail 4 */
+
+#slide7{
+	background-color:#efefef;
+	background-image: url('../img/networkweb_faded_grey.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color:#3d3e3e;
+}
+#slide7 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#3d3e3e;
+	font-weight: 700;
+}
+#slide7 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+/* Slide 8 - Metabolic Team Overview */
+
+#slide8{
+	background-color:#fff;
+	color:#7f7f80;
+	margin-bottom: 3em;
+	padding-bottom: 0;
+}
+#slide8 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#3d3e3e;
+	font-weight: 700;
+}
+#slide8 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#slide8 .row {
+	margin: 0;
+	padding-left: 0;
+}
+
+#slide8 #teamphoto {
+	margin-bottom: 20px;
+}
+
+
+/* Slide 9 - Team detail */
+
+#slide9{
+	background-color:#fff;
+	color:#3d3e3e;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: .9em;
+	text-align: left;
+}
+#slide9 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	color:#3d3e3e;
+	font-weight: 700;
+}
+#slide9 h2 {
+	font-size: 2em;
+	color: #3d3e3e;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+#slide9 .teamgrid {
+	margin-left: 0;
+	margin-bottom: 3%;
+}
+
+/* Div containing images to cross fade */
+#slide9 .image {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	margin-bottom: 10%;
+}
+
+#slide9 .name {
+	margin-top: 25%;
+	margin-bottom: 25%;
+	font-size: 1em;
+	background-color: #fff;
+	color: #3d3e3e;
+}
+
+#slide9 .name h2 {
+	font-size: 1.5em;
+	color: #f05557;
+	font-weight: 700;
+}
+
+#slide9 .memberphoto {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* Slide down div containing member information */
+#slide9 #memberinfo {
+	background: #252525;
+	color: #fff;
+	left: 0;
+	right: 0;
+	padding: 5%;
+	margin: 0;
+	margin-bottom: 2%;
+	display: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#slide9 h2 {
+	color: #fff;
+}
+
+#slide9 #contactinfo {
+	font-size: .8em;
+	text-align: left;
+}
+
+#slide9 #contactinfo h3 {
+	padding: 0;
+	font-weight: 400;
+	margin-left: -10px;
+	text-align: left;
+}
+
+#slide9 #contactinfo a, a:visited {
+	color: #f05557;
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+}
+
+#slide9 #contactinfo a:hover {
+	color: #252525;
+}
+
+#slide9 #contactinfo #detailphoto {
+	width: 150px;
+	height: auto;
+}
+
+/* Labels for contact info */
+#slide9 #contactinfo .label {
+	font-weight: 700;
+	font-size: .6em;
+	color: #f05557;
+	background: none;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#slide9 #contactinfo .info {
+	text-align: left;
+	float: left;
+}
+
+

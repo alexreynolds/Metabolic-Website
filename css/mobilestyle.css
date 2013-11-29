@@ -1,0 +1,36 @@
+/* Mobile stylesheet for Metabolic website */
+@media screen and (max-width: 480px) {
+
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+
+#slide1 h1 {
+	font-size: 2em;
+}
+#slide1 h2 {
+}
+#slide2 h1 {
+}
+#slide2 h2 {
+}
+#slide3 h1 {
+}
+#slide3 h2 {
+}
+#slide4 h1 {
+}
+#slide4 h2 {
+}
+
+
+}
+
+
+
+
