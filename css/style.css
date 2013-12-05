@@ -34,7 +34,7 @@ a:visited {
 
 .navigation {
 	width: 70px;
-	background: #333;
+	background-color: transparent;
 	min-width: 70px;
 	max-width: 70px;
 	height: 100%;
@@ -48,9 +48,11 @@ a:visited {
 
 }
 
-.side-nav {
+.side-nav li {
+	text-align: center;
+	margin: 20px;
 }
-
+/*
 .side-nav li, a {
 	color: #fff;
 	padding: 10px;
@@ -58,18 +60,29 @@ a:visited {
 	margin: 0;
 	z-index: 1000;
 }
+*/
+
+/* Circular links */
+.side-nav a {
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	border: 3px solid #333;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin: 10px;
+}
 
 .side-nav a:visited {
-	color: #fff;
 }
 
 .side-nav a:hover {
-	color: #f05557;
+	background-color: #f05557;
 }
 
-.side-nav .active {
-	background: #f05557;
-	color: #fff;
+.side-nav .active a {
+	background-color: #333;
 }
 
 
@@ -80,8 +93,11 @@ a:visited {
 	width:100%;
 	height:auto;
 	position: relative;
-	padding:140px 0;
-	padding-left: 150px;	/* To account for nav bar */
+	padding:80px 0;
+	padding-left: 80px;	/* To account for nav bar */
+	min-padding-left: 80px;
+	padding-right: 30px;
+	line-height: auto;
 }
 
 
@@ -90,7 +106,7 @@ a:visited {
 
 #slide1{
 	background-image: url('../img/slide1/background_01.jpg');
-	transition: background-image 2s ease-in-out;
+	transition: background-image 1s ease-in-out;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -102,9 +118,20 @@ a:visited {
 	text-align: center;
 	padding-left: 0px;
 }
+
+#slide1 #quotecontainer {
+	text-align: center;
+	margin-right: 15%;
+	margin-left: 15%;
+	margin-top: 5%;
+	width: 70%;
+	height: 100%;
+	padding-bottom: 100%;
+}
+
 #slide1 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
+	font-size: 4em;
+	letter-spacing: -2px;
 	color:#fff;
 	font-weight: 700;
 }
@@ -115,9 +142,12 @@ a:visited {
 	font-weight: 400;
 }
 
+/* Arrow buttons */
 #slide1 .bgchange {
-	width: 40px;
-	height: 40px;
+	/*width: 40px;
+	height: 40px;*/
+	width: 4%;
+	height: auto;
 	position: absolute;
 	top: 45%;
 }
@@ -150,14 +180,13 @@ a:visited {
 	line-height: 1.2em;
 }
 #slide2 h2 {
-	font-size: 2em;
+	font-size: 3em;
 	color: #ffffff;
-	padding-bottom:20px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #slide2 #philosophy {
-	padding-top: 20%;
+	padding-top: 10%;
 }
 
 
@@ -172,6 +201,8 @@ a:visited {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	color: #fff;
+	padding-left: 80px;
 }
 #slide3 h1 {
 	font-size: 3.8em;
@@ -181,11 +212,16 @@ a:visited {
 }
 #slide3 h2 {
 	font-size: 2em;
-	color: #8a8683;
-	padding-bottom:20px;
+	color: #f05557;
+	padding-bottom:10px;
 	font-weight: 400;
 }
-
+#slide3 ul {
+	padding-top: 2%;
+}
+#slide3 li:before {
+	color:#f05557;
+}
 
 
 
@@ -193,7 +229,8 @@ a:visited {
 
 #slide4{
 	background-color:#3d3e3e;
-	color:#ffffff;
+	color:#fff;
+	padding-left: 80px;
 }
 #slide4 h1 {
 	font-size: 3.8em;
@@ -218,6 +255,7 @@ a:visited {
 	-o-background-size: cover;
 	background-size: cover;
 	color:#ffffff;
+	padding-left: 80px;
 }
 #slide5 h1 {
 	font-size: 3.8em;
@@ -237,6 +275,7 @@ a:visited {
 #slide6{
 	background-color:#c8c8c8;
 	color:#3d3e3e;
+	padding-left: 80px;
 }
 #slide6 h1 {
 	font-size: 3.8em;
@@ -262,6 +301,7 @@ a:visited {
 	-o-background-size: cover;
 	background-size: cover;
 	color:#3d3e3e;
+	padding-left: 80px;
 }
 #slide7 h1 {
 	font-size: 3.8em;
@@ -289,7 +329,7 @@ a:visited {
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	color:#3d3e3e;
-	font-weight: 700;
+	font-weight: 400;
 }
 #slide8 h2 {
 	font-size: 2em;
@@ -401,13 +441,15 @@ a:visited {
 	font-weight: 400;
 	margin-left: -10px;
 	text-align: left;
+	color: #fff;
 }
 
 #slide9 #contactinfo a, a:visited {
-	color: #f05557;
+	color: #fff;
 	font-style: italic;
 	margin: 0;
 	padding: 0;
+	font-weight: 400;
 }
 
 #slide9 #contactinfo a:hover {
@@ -435,3 +477,79 @@ a:visited {
 }
 
 
+/* Slide 10 - Project Portfolio */
+
+#slide10 {
+	background-color: #252525;
+	color: #fff;
+}
+
+#slide10 h1 {
+	color: #fff;
+}
+
+#slide10 h2 {
+	font-size: 1.5em;
+	color: #f05557;
+}
+
+/* Container for Orbit slideshow */
+#slide10 #projslidecontainer {
+}
+
+/* Orbit slideshow for projects */
+#slide10 .orbit-container .row{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#slide10 .orbit-timer, .orbit-slide-number {
+	display: none;
+}
+
+#slide10 .orbit-bullets li.active {
+	background: #f05557;
+}
+
+#slide10 #projectdetail .projectimg {
+	margin-bottom: 20px;
+}
+
+/* Side scrolling div to hold projects */
+#slide10 #project_container {
+	width: 100%;
+	height: 200px;
+	overflow: scroll;
+	white-space: nowrap;
+}
+
+/* Project divs within container */
+#slide10 .project {
+	display: inline-block;
+	width: 200px;
+	height: 100%;
+	margin-left: 5px;
+	position: relative;
+}
+
+#slide10 .project .name {
+	color: #fff;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 100%;
+	opacity: 0;
+	text-align: center;
+}
+
+#slide10 .project .name h2 {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	color: #fff;
+	margin-top: 30%;
+	margin-bottom: 30%;
+}
