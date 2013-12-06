@@ -21,7 +21,7 @@ a:link {
    transition:color 0.3s ease-in;  
 }
 a:hover {
-	color: #bde2df;
+	color: #f05557;
 	text-decoration: none;
 }
 a:visited {
@@ -52,15 +52,6 @@ a:visited {
 	text-align: center;
 	margin: 20px;
 }
-/*
-.side-nav li, a {
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-	margin: 0;
-	z-index: 1000;
-}
-*/
 
 /* Circular links */
 .side-nav a {
@@ -79,6 +70,7 @@ a:visited {
 
 .side-nav a:hover {
 	background-color: #f05557;
+	border: #f05557;
 }
 
 .side-nav .active a {
@@ -93,9 +85,8 @@ a:visited {
 	width:100%;
 	height:auto;
 	position: relative;
-	padding:80px 0;
+	padding:5%;
 	padding-left: 80px;	/* To account for nav bar */
-	min-padding-left: 80px;
 	padding-right: 30px;
 	line-height: auto;
 }
@@ -105,7 +96,7 @@ a:visited {
 /* Slide 1 - Inspirational quotes shit */ 
 
 #slide1{
-	background-image: url('../img/slide1/background_01.jpg');
+	background-image: url('../img/slide1/bkg_d_01.jpg');
 	transition: background-image 1s ease-in-out;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -117,23 +108,30 @@ a:visited {
 	overflow: hidden;
 	text-align: center;
 	padding-left: 0px;
+	position: relative;
 }
 
 #slide1 #quotecontainer {
 	text-align: center;
 	margin-right: 15%;
 	margin-left: 15%;
-	margin-top: 5%;
+	margin-top: 7%;
 	width: 70%;
-	height: 100%;
-	padding-bottom: 100%;
+	height: 50%;
+	margin: auto;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
 }
 
 #slide1 h1 {
 	font-size: 4em;
-	letter-spacing: -2px;
 	color:#fff;
 	font-weight: 700;
+	text-shadow: 1px 2px 5px #000;
 }
 #slide1 h2 {
 	font-size: 2em;
@@ -170,7 +168,6 @@ a:visited {
 #slide2{
 	background-color:#f05557;
 	color:#ffffff;
-	padding-left: 80px;
 }
 #slide2 h1 {
 	font-size: 3.8em;
@@ -223,9 +220,13 @@ a:visited {
 	color:#f05557;
 }
 
+/* Captions under images in the Services detail slides */
+.caption {
+	font-style: italic;
+	font-size: .8em;
+}
 
-
-/* Slide 4 - Actvities Detail 1 */
+/* Slide 4 - Services Detail 1 - Consulting */
 
 #slide4{
 	background-color:#3d3e3e;
@@ -233,23 +234,27 @@ a:visited {
 	padding-left: 80px;
 }
 #slide4 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	color:#ffffff;
+	font-size: 3em;
+	color:#f05557;
 	font-weight: 700;
 }
 #slide4 h2 {
 	font-size: 2em;
 	color: #ffffff;
-	padding-bottom:20px;
 	font-weight: 400;
 }
+#slide4 img {
+	width: 300px;
+	height: auto;
+	border-radius: 150px;
+	margin-right: 20px;
+}
 
-/* Slide 5 - Activities Detail 2 */
+/* Slide 5 - Services Detail 2 - Sensors */
 
 #slide5{
 	background-color:#7f7f80;
-	background-image: url('../img/networkweb_faded.png');
+	background-image: url('../img/services/sensors.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -258,44 +263,53 @@ a:visited {
 	padding-left: 80px;
 }
 #slide5 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	color:#3d3e3e;
+	font-size: 3em;
+	color:#f05557;
 	font-weight: 700;
+	text-shadow: 1px 1px 5px #222;
 }
 #slide5 h2 {
 	font-size: 2em;
 	color: #ffffff;
 	padding-bottom:20px;
 	font-weight: 400;
+	text-shadow: 1px 2px 3px #000;
 }
 
-/* Slide 6 - Activities Detail 3 */
+/* Slide 6 - Services Detail 3 - Symbioculture */
 
 #slide6{
-	background-color:#c8c8c8;
-	color:#3d3e3e;
+	background-color:#3d3e3e;
+	color:#fff;
 	padding-left: 80px;
+	text-align: right;
 }
 #slide6 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	color:#3d3e3e;
+	font-size: 2.8em;
+	color:#f05557;
 	font-weight: 700;
 }
 #slide6 h2 {
 	font-size: 2em;
-	color: #ffffff;
+	color: #fff;
 	padding-bottom:20px;
 	font-weight: 400;
 }
 
+#slide6 img {
+	width: 300px;
+	height: auto;
+	border-radius: 150px;
+	text-align: left;
+	margin-left: 20px;
+}
 
-/* Slide 7 - Activities Detail 4 */
+
+/* Slide 7 - Services Detail 4 - De Ceuvel */
 
 #slide7{
 	background-color:#efefef;
-	background-image: url('../img/networkweb_faded_grey.png');
+	background-image: url('../img/services/deceuvel.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -304,16 +318,17 @@ a:visited {
 	padding-left: 80px;
 }
 #slide7 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	color:#3d3e3e;
+	font-size: 3em;
+	color:#f05557;
 	font-weight: 700;
+	text-shadow: 1px 2px 5px #000;
 }
 #slide7 h2 {
 	font-size: 2em;
-	color: #ffffff;
+	color: #fff;
 	padding-bottom:20px;
 	font-weight: 400;
+	text-shadow: 1px 1px 5px #222;
 }
 
 
@@ -324,12 +339,14 @@ a:visited {
 	color:#7f7f80;
 	margin-bottom: 3em;
 	padding-bottom: 0;
+	text-align: center;
+	font-size: 1.3em;
 }
 #slide8 h1 {
 	font-size: 3.8em;
 	letter-spacing: -3px;
-	color:#3d3e3e;
-	font-weight: 400;
+	color:#f05557;
+	font-weight: 700;
 }
 #slide8 h2 {
 	font-size: 2em;
@@ -355,7 +372,7 @@ a:visited {
 	color:#3d3e3e;
 	margin-top: 0;
 	padding-top: 0;
-	font-size: .9em;
+	font-size: 1em;
 	text-align: left;
 }
 #slide9 h1 {
@@ -365,7 +382,7 @@ a:visited {
 	font-weight: 700;
 }
 #slide9 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #3d3e3e;
 	padding-bottom:20px;
 	font-weight: 400;
@@ -399,9 +416,12 @@ a:visited {
 }
 
 #slide9 .name h2 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: #f05557;
 	font-weight: 700;
+	margin-bottom: 5px;
+	padding: 0;
+	line-height: 1em;
 }
 
 #slide9 .memberphoto {
@@ -453,7 +473,7 @@ a:visited {
 }
 
 #slide9 #contactinfo a:hover {
-	color: #252525;
+	color: #f05557;
 }
 
 #slide9 #contactinfo #detailphoto {
@@ -518,17 +538,16 @@ a:visited {
 /* Side scrolling div to hold projects */
 #slide10 #project_container {
 	width: 100%;
-	height: 200px;
-	overflow: scroll;
 	white-space: nowrap;
+	text-align: center;
 }
 
 /* Project divs within container */
 #slide10 .project {
 	display: inline-block;
-	width: 200px;
+	width: 100px;
 	height: 100%;
-	margin-left: 5px;
+	margin-right: 10px;
 	position: relative;
 }
 
@@ -550,6 +569,49 @@ a:visited {
 	vertical-align: middle;
 	line-height: normal;
 	color: #fff;
-	margin-top: 30%;
+	margin-top: 40%;
 	margin-bottom: 30%;
+}
+
+#slide10 .project img {
+	width: 200px;
+	height: auto;
+	border-radius: 100px;
+}
+
+/* Slide 11 - Contact */ 
+
+#slide11{
+	background-color:#f05557;
+	color:#ffffff;
+	padding-left: 80px;
+	letter-spacing: 0px;
+}
+#slide11 h1 {
+	font-size: 3.8em;
+	color:#ffffff;
+	font-weight: 700;
+	line-height: 1.2em;
+}
+#slide11 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	font-weight: 700;
+}
+#slide11 h3{
+	color: #fff;
+	font-size: 1.3em;
+}
+#slide11 a, a:visited {
+	font-style: italic;
+	color: #fff;
+}
+#slide11 a:hover {
+	color: #3d3e3e;
+}
+
+#slide11 .contacticon {
+	width: 40px;
+	height: auto;
+	margin-right: 15px;
 }

@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
 
 
     var bgindex = 1;    // Index of background image
-    var indexmax = 6;   // Number of background images to scroll through
+    var indexmax = 5;   // Number of background images to scroll through
 
     var quotes = new Array();
     quotes[0] = "Metabolic is an action agency for societal transformation.";
@@ -24,12 +24,11 @@ jQuery(document).ready(function ($) {
  
 
     preload([
-        'img/slide1/background_01.jpg',
-        'img/slide1/background_02.jpg',
-        'img/slide1/background_03.jpg',
-        'img/slide1/background_04.jpg',
-        'img/slide1/background_05.jpg',
-        'img/slide1/background_06.jpg'
+        'img/slide1/bkg_d_01.jpg',
+        'img/slide1/bkg_d_02.jpg',
+        'img/slide1/bkg_d_03.jpg',
+        'img/slide1/bkg_d_04.jpg',
+        'img/slide1/bkg_d_05.jpg'
     ]);
 
 
@@ -148,6 +147,25 @@ jQuery(document).ready(function ($) {
         goToByScroll(dataslide);
 
     });
+
+
+    // Changes social media icons on mouseover
+    $('.contacticon')
+        .mouseover(function() { 
+            //var src = $(this).attr("src").match(/[^\.]+/) + "_black.png";
+            var src = $(this).attr("src").replace(".png", "_grey.png");
+            $(this).fadeOut(0, function() {
+                $(this).attr("src", src);
+            })
+            .fadeIn(100);
+        })
+        .mouseout(function() {
+            var src = $(this).attr("src").replace("_grey.png", ".png");
+            $(this).fadeOut(0, function() {
+                $(this).attr("src", src);
+            })
+            .fadeIn(10);
+        });
 
 
 });
