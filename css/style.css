@@ -513,14 +513,26 @@ a:visited {
 	color: #f05557;
 }
 
+#slide10 .project-orbit {
+	margin-bottom: 0;
+}
+
+#slide10 #project-5 {
+	display: none;
+}
+
 /* Container for Orbit slideshow */
-#slide10 #projslidecontainer {
+#slide10 .project-orbit iframe {
+	width: 100%;
+	height: auto;
+	min-height: 380px;
 }
 
 /* Orbit slideshow for projects */
 #slide10 .orbit-container .row{
 	margin-left: 50px;
 	margin-right: 50px;
+	height: 400px;
 }
 
 #slide10 .orbit-timer, .orbit-slide-number {
@@ -553,15 +565,18 @@ a:visited {
 
 #slide10 .project .name {
 	color: #fff;
-	float: left;
-	position: absolute;
-	left: 0;
-	top: 0;
 	width: 100%;
-	height: 100%;
-	padding-bottom: 100%;
+	height: auto;
 	opacity: 0;
 	text-align: center;
+	vertical-align: middle;
+	/* Vertical centering */
+	margin: auto;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 #slide10 .project .name h2 {
@@ -571,6 +586,8 @@ a:visited {
 	color: #fff;
 	margin-top: 40%;
 	margin-bottom: 30%;
+	font-size: .8em;
+	text-transform: uppercase;
 }
 
 #slide10 .project img {
