@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
 
 
     var bgindex = 1;    // Index of background image
-    var indexmax = 5;   // Number of background images to scroll through
+    var indexmax = 6;   // Number of background images to scroll through
 
     var quotes = new Array();
     quotes[0] = "Metabolic is an action agency for societal transformation.";
@@ -24,11 +24,11 @@ jQuery(document).ready(function ($) {
  
 
     preload([
-        'img/slide1/bkg_d_01.jpg',
-        'img/slide1/bkg_d_02.jpg',
-        'img/slide1/bkg_d_03.jpg',
-        'img/slide1/bkg_d_04.jpg',
-        'img/slide1/bkg_d_05.jpg'
+        'img/slide1/bkg_01.jpg',
+        'img/slide1/bkg_02.jpg',
+        'img/slide1/bkg_03.jpg',
+        'img/slide1/bkg_04.jpg',
+        'img/slide1/bkg_05.jpg'
     ]);
 
 
@@ -39,8 +39,17 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    // Changes background according to a timer
+    setInterval( function() {
+
+        bgindex++;
+
+        changeBackground(bgindex);
+
+    }, 6000);
+
     // Changes left/right arrows on mouseover
-    $('.bgchange')
+    /*$('.bgchange')
         .mouseover(function() { 
             //var src = $(this).attr("src").match(/[^\.]+/) + "_black.png";
             var src = $(this).attr("src").replace(".png", "_black.png");
@@ -55,7 +64,7 @@ jQuery(document).ready(function ($) {
                 $(this).attr("src", src);
             })
             .fadeIn(10);
-        });
+        });*/
 
     // Changes background image of slide 1 on click
     $('.bgchange').on('click', function() {
@@ -66,18 +75,27 @@ jQuery(document).ready(function ($) {
         if (btnVal == 'right') { bgindex++; }
         else { bgindex--; }
 
-        if (bgindex >= indexmax) { bgindex = 1; }         // Should never go over max
-        else if (bgindex <= 0) { bgindex = indexmax; }  // Should never go under 0
+        changeBackground(bgindex);
 
-        console.log("background index = " + bgindex);
+    });
+
+    $('#downarrow').on('click', function() {
+        goToByScroll(2);
+    });
+
+    // Changes the background image of the first slide given the index of the next img
+    function changeBackground(index) {
+
+        if (index >= indexmax) { bgindex = 1; }         // Should never go over max
+        else if (bgindex <= 0) { bgindex = indexmax; }  // Should never go under 0
 
         // Sets index of quote to display
         var quoteIndex = bgindex - 1;
-        console.log("quote index: " + quoteIndex);
-        console.log("new text: " + quotes[quoteIndex]);
+
         // Updates text shown on slide 1
-        $('#quotetext').fadeOut(1000, function() {
-            $(this).text(quotes[quoteIndex]).fadeIn(1000);
+        $('#quotecontainer').fadeOut(1000, function() {
+            $('#quotetext').text(quotes[quoteIndex]);
+            $(this).delay(1000).fadeIn(2000);
         });
         //$('#quotetext').text(quotes[quoteIndex]).fadeIn();
 
@@ -88,8 +106,7 @@ jQuery(document).ready(function ($) {
         // Replaces number in URL with new background image index
         newUrl = bgUrl.substring(0, bgUrl.length - 1) +  bgindex + ".jpg)";
         $('#slide1').css('background-image', newUrl);
-
-    });
+    }
 
     
     slide.waypoint(function (event, direction) {
@@ -120,10 +137,13 @@ jQuery(document).ready(function ($) {
         }, 1500, 'easeInOutQuint');
     }
 
+    // Hide navigation when down arrow is reached
+    $('#downarrow').waypoint(function() {
+        $('.navigation').animate({ left: '0px' }, 200);
+    })
+
     // Navigation bar is only shown once the user scrolls past first slide
     slide2.waypoint(function() {
-        // SHOULD CHANGE WAYPOINT TO TEXT ON THE SLIDE
-        //$('.navigation').show();
         $('.navigation').animate({ left: '0px' }, 200);
     });
 

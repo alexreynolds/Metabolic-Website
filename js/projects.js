@@ -5,8 +5,8 @@ jQuery(document).ready(function ($) {
 	// An array to hold all of the projects and their information
 	var projects = [
 		{
-			"id" : 0,
-			"title" : "Cleantech Playground",
+			"id" : "0",
+			"title" : "Cleantech Playground: Sustainable built environments",
 			"subtitle" : "Analyze - Design",
 			"text1" : "The Cleantech Playground serves as a new blueprint for urban development, where decentralized technologies and full recycling of local resources empowers urban areas to be self-sufficient.",
 			"text2" : "The Cleantech Playground was the title of a design and feasibility study of closed cycle, sustainable built environments. Metabolic specifically focused on two neighborhoods in Amsterdam. We published the report in February 2013 with Innovatie Netwerk, part of the Dutch Ministry of Economic Affairs. The full report can be viewed at:  http://innovatienetwerk.onlinetouch.nl/216",
@@ -20,8 +20,8 @@ jQuery(document).ready(function ($) {
 			"img5" : "<img src=\"img/projects/whale2.jpg\">"
 		},
 		{
-			"id" : 1,
-			"title" : "De Ceuvel",
+			"id" : "1",
+			"title" : "De Ceuvel: Urban renewal",
 			"subtitle" : "Experiment - Build",
 			"text1" : "The de Ceuvel development is on a plot of polluted land that will be cleaned using plants (phytoremediation). The buildings on the site will consist of retrofitted houseboats, upgraded to a high level of energy performance.",
 			"text2" : "De Ceuvel includes 15 houseboats placed on land and a teahouse that serve creative entrepreneurs, architects, ???",
@@ -35,8 +35,8 @@ jQuery(document).ready(function ($) {
 			"img5" : "<img src=\"img/projects/whale2.jpg\">"
 		},
 		{
-			"id" : 2,
-			"title" : "Circle Economy",
+			"id" : "2",
+			"title" : "Circle Economy: Transitioning organizations",
 			"subtitle" : "Analyze - Design",
 			"text1" : "Metabolic is working with the Circle Economy to develop a methodology for systemic sustainability analysis.",
 			"text2" : "???",
@@ -50,8 +50,8 @@ jQuery(document).ready(function ($) {
 			"img5" : "<img src=\"img/projects/whale2.jpg\">"
 		},
 		{
-			"id" : 3,
-			"title" : "Sensors",
+			"id" : "3",
+			"title" : "Sensors: Integrated resource monitoring",
 			"subtitle" : "Design - Experiment",
 			"text1" : "Metabolic is using existing sensors combined with our own micro-controller design to measure technology performance, environmental quality, and user behavior.",
 			"text2" : "We use sensors to automate urban farming systems, measure resource use in the built environment, and monitor air and water quality for cities.",
@@ -65,8 +65,8 @@ jQuery(document).ready(function ($) {
 			"img5" : "<img src=\"img/projects/whale2.jpg\">"
 		},
 		{
-			"id" : 4,
-			"title" : "Overhoeks Toren",
+			"id" : "4",
+			"title" : "Overhoeks Toren: Maximizing existing infrastructure",
 			"subtitle" : "Experiment - Build",
 			"text1" : "The Overhoeks tower is an iconic building in Amsterdam that used to be the headquarters of Royal Dutch Shelll. It was bought with plans to transform it into a series of clubs, apartments, and restaurants. During this transition, it was opened to unique start-ups and creative businesses who could make good use out of the space in the meantime.",
 			"text2" : "Metabolic transformed the first floor of the Overhoeks Tower into an open-plan co-working space and testing ground in the Summer of 2013.",
@@ -80,8 +80,8 @@ jQuery(document).ready(function ($) {
 			"img5" : "<img src=\"img/projects/whale2.jpg\">"
 		},
 		{
-			"id" : 5,
-			"title" : "Symbioculture",
+			"id" : "5",
+			"title" : "Symbioculture: A new paradigm for agriculture",
 			"subtitle" : "Design - Experiment - Build",
 			"text1" : "Symbioculture presents a radical departure from business as usual in agricultural production: rather than focusing on the idealized production of a single crop (as a monoculture), it instead proposes the idea of many crops, fungi, livestock, and insects in a complex polyculture. It is designed to approximate some aspects of a natural ecosystem with self supporting plant and animal interactions, and the creation of ecological niches within the system reduce the need for mechanical and chemical interventions.",
 			"text2" : "‘Polydome Applied’ illustrates the practical application of symbiotic agricultural (symbioculture) systems that maximize food output, eliminate environmental impact, connect biophysical and social flows, and create meaningful jobs. Read the full report online: http://innovatienetwerk.onlinetouch.nl/223",
@@ -95,8 +95,8 @@ jQuery(document).ready(function ($) {
 			"img5" : "<img src=\"img/projects/whale2.jpg\">"
 		},
 		{
-			"id" : 6,
-			"title" : "Thailab",
+			"id" : "6",
+			"title" : "Thailab: Improving the quality of life",
 			"subtitle" : "Analyze - Design - Experiment - Build",
 			"text1" : "Thailab works with communities in Chiang Mai. Thailand to improve access to basic services like water, sanitation, energy, food, and shelter. We combine local knowledge of available material, needs, and preferences with expert advice and open-source designs to build Do-It-Yourself (DIY) technologies that are useful, affordable, and replicable.",
 			"text2" : "Current challenges around climate change, urbanization, and infrastructure shortages call for new forms of sustainable development. Wastewater treatment is painfully inadequate in Thailand, exacerbating problems that come with flooding and water pollution.  The urban poor remain the most vulnerable and are without the right support that empowers communities and individuals to improve their quality of life.",
@@ -110,8 +110,8 @@ jQuery(document).ready(function ($) {
 			"img5" : "<img src=\"img/projects/whale2.jpg\">"
 		},
 		{
-			"id" : 7,
-			"title" : "Metabolic Lab",
+			"id" : "7",
+			"title" : "Window Farm: Home food production",
 			"subtitle" : "Design - Experiment - Build",
 			"text1" : "Metabolic Lab is Metabolic’s showcase and demonstration ground on the de Ceuvel site as part of the Cleantech Playground concept. The two-level structure is made out of an old houseboat and will include an experimental greenhouse, interactive technology, data exploration, and a sanitation and nutrient recovery system.",
 			"text2" : "Metabolic Lab will be a premier attraction that shows relevant target groups like developers, architects, and city planners how to integrate clean technology and green building practices into their work.",
@@ -126,9 +126,6 @@ jQuery(document).ready(function ($) {
 		},
 	];
 
-	// Load information into the projects divs on ready
-	changeProjectInfo(0, projects[0]);
-
 	// Shows project name div when project image is hovered over
 	$('.project').hover(function() {
         $(this).children('img').animate({opacity: 0.2}, 800);	// Dim image
@@ -138,7 +135,7 @@ jQuery(document).ready(function ($) {
 		$(this).children('.name').animate({opacity: 0}, 800);
 	});
 
-	// Edits & shows/hides the team member information div when image is clicked
+	// Edits & shows/hides the project information div when image is clicked
 	$('.project').on('click', function () {
 		// Get project id from the clicked item
 	  	var projectid = $(this).attr('id');
@@ -156,22 +153,30 @@ jQuery(document).ready(function ($) {
 			console.log("Uh oh, multiple projects with the same id...");
 		}
 
-		// If project detail is hidden, change info and show
-	  if ( $( '#projslidecontainer' ).is( ':hidden' ) ) {
-	  	$('#projslidecontainer').show().attr('height', '900px');
-	  	changeProjectInfo(projectid, currproject);
-	  } else {
-	  	// Else just change info
-	  	changeProjectInfo(projectid, currproject);
-	  }
+		changeProjectInfo(currproject);
 
 	});
 
 	// Changes the information in the project information div
 	// Input is the relevant project object from the projects array
-	function changeProjectInfo(id, project) {
+	function changeProjectInfo(project) {
+
+		// Update title
+		$("#title").text(project.title);
+
+
+		// Hide all project slideshow divs first
+		$(".project-slideshow-div").each(function() {
+			$(this).hide();
+		});
+
+		// Show relevant project slideshow
+		var projectId = "#show" + project.id;
+
+		$(projectId).css('display', 'block');
 
 		// Iterates through all slides of Orbit slideshow and updates information
+		/*
 		for (var i = 0; i < 5; i++) {
 			// Generates the id of the current li (of slideshow) to edit
 			//var currId = "project-" + i;
@@ -180,8 +185,8 @@ jQuery(document).ready(function ($) {
 			var currText = "text" + i;
 			var currImg = "img" + i;
 
-			// Update title
-			var titleId = "#title-" + (i + 1);
+			// Update subtitle
+			var titleId = "#subtitle-" + (i + 1);
 			$(titleId).text(project.title);
 
 			// Update text
@@ -193,7 +198,10 @@ jQuery(document).ready(function ($) {
 			//$(imgId).attr("src", project[currImg]);
 			$(imgId).html(project[currImg]);
 
-		}
+		} */
+
+		// Hide the previous slideshow div and display the new one
+
 	}
 
 

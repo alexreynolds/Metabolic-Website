@@ -1,8 +1,8 @@
 /* Global stylesheet for Metabolic website */
 
 body, html {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
 	font-size: 1em;
 	color: #8a8683;
 	background-color:#ffffff;
@@ -96,7 +96,7 @@ a:visited {
 /* Slide 1 - Inspirational quotes shit */ 
 
 #slide1{
-	background-image: url('../img/slide1/bkg_d_01.jpg');
+	background-image: url('../img/slide1/bkg_01.jpg');
 	transition: background-image 1s ease-in-out;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -107,36 +107,76 @@ a:visited {
 	width:100%;
 	overflow: hidden;
 	text-align: center;
-	padding-left: 0px;
 	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-#slide1 #quotecontainer {
-	text-align: center;
-	margin-right: 15%;
-	margin-left: 15%;
-	margin-top: 7%;
-	width: 70%;
-	height: 50%;
-	margin: auto;
+#slide1 #logo {
 	position: absolute;
-	top:0;
+	top: 5%;
+	left: 60px;
+	float: left;
+	width: 150px;
+}
+
+#slide1 #quotewrapper {
+	position: relative;
+}
+/*
+#slide1 #quotecontainer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
+	margin: auto;
+	width: 500px;
+	height: 250px;
+	padding: 20px;
+	padding-top: 0;
+	display: table;
+	background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+}*/
 
+#slide1 .block {
+	text-align: center;
+    margin: 20px;
+    height: 300px;
+}
+
+#slide1 .block:before {
+	content: '';
+	display: inline-block;
+	height: 200%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+
+#slide1 .quotes {
+	display: inline-block;
+	vertical-align: middle;
+	width: 500px;
+	padding: 20px;
+	background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #slide1 h1 {
-	font-size: 4em;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 2em;
 	color:#fff;
-	font-weight: 700;
-	text-shadow: 1px 2px 5px #000;
+	font-weight: 300;
+	/*text-shadow: 1px 2px 5px #000;*/
 }
 #slide1 h2 {
 	font-size: 2em;
 	color: #8a8683;
-	padding-bottom:20px;
 	font-weight: 400;
 }
 
@@ -144,10 +184,30 @@ a:visited {
 #slide1 .bgchange {
 	/*width: 40px;
 	height: 40px;*/
-	width: 4%;
+	width: 30px;
 	height: auto;
 	position: absolute;
 	top: 45%;
+}
+
+/* Div with arrow to scroll down to slide 2*/
+#slide1 #downarrow {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 10px;
+    left: 48%;
+    right: 50%;
+    padding: 5px;
+    padding-top: 12px;
+}
+
+#slide1 #downarrow img {
+	width: 30px;
+	height: 30px;
 }
 
 /* Left arrow */
@@ -168,22 +228,15 @@ a:visited {
 #slide2{
 	background-color:#f05557;
 	color:#ffffff;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	line-height: 1.2em;
 }
 #slide2 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
+	font-size: 2.2em;
 	color:#ffffff;
 	font-weight: 700;
 	line-height: 1.2em;
-}
-#slide2 h2 {
-	font-size: 3em;
-	color: #ffffff;
-	font-weight: 700;
-}
-
-#slide2 #philosophy {
-	padding-top: 10%;
 }
 
 
@@ -200,15 +253,16 @@ a:visited {
 	background-size: cover;
 	color: #fff;
 	padding-left: 80px;
+	line-height: 1.2em;
 }
 #slide3 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
+	font-size: 2em;
+	letter-spacing: -1px;
 	color:#fff;
 	font-weight: 700;
 }
 #slide3 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #f05557;
 	padding-bottom:10px;
 	font-weight: 400;
@@ -234,17 +288,18 @@ a:visited {
 	padding-left: 80px;
 }
 #slide4 h1 {
-	font-size: 3em;
+	font-size: 2em;
 	color:#f05557;
 	font-weight: 700;
+	margin-top: 5%;
 }
 #slide4 h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #ffffff;
-	font-weight: 400;
+	font-weight: 300;
 }
 #slide4 img {
-	width: 300px;
+	width: 250px;
 	height: auto;
 	border-radius: 150px;
 	margin-right: 20px;
@@ -255,6 +310,7 @@ a:visited {
 #slide5{
 	background-color:#7f7f80;
 	background-image: url('../img/services/sensors.jpg');
+	background-position: 0px -200px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -263,16 +319,16 @@ a:visited {
 	padding-left: 80px;
 }
 #slide5 h1 {
-	font-size: 3em;
+	font-size: 2em;
 	color:#f05557;
 	font-weight: 700;
 	text-shadow: 1px 1px 5px #222;
 }
 #slide5 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #ffffff;
 	padding-bottom:20px;
-	font-weight: 400;
+	font-weight: 300;
 	text-shadow: 1px 2px 3px #000;
 }
 
@@ -285,19 +341,20 @@ a:visited {
 	text-align: right;
 }
 #slide6 h1 {
-	font-size: 2.8em;
+	font-size: 2em;
 	color:#f05557;
 	font-weight: 700;
+	margin-top: 5%;
 }
 #slide6 h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	color: #fff;
 	padding-bottom:20px;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 #slide6 img {
-	width: 300px;
+	width: 250px;
 	height: auto;
 	border-radius: 150px;
 	text-align: left;
@@ -318,16 +375,16 @@ a:visited {
 	padding-left: 80px;
 }
 #slide7 h1 {
-	font-size: 3em;
+	font-size: 2em;
 	color:#f05557;
 	font-weight: 700;
-	text-shadow: 1px 2px 5px #000;
+	text-shadow: 1px 1px 5px #222;
 }
 #slide7 h2 {
 	font-size: 2em;
 	color: #fff;
 	padding-bottom:20px;
-	font-weight: 400;
+	font-weight: 300;
 	text-shadow: 1px 1px 5px #222;
 }
 
@@ -341,29 +398,20 @@ a:visited {
 	padding-bottom: 0;
 	text-align: center;
 	font-size: 1.3em;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 #slide8 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
+	font-size: 2.5em;
 	color:#f05557;
 	font-weight: 700;
 }
 #slide8 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #ffffff;
 	padding-bottom:20px;
 	font-weight: 400;
 }
-
-#slide8 .row {
-	margin: 0;
-	padding-left: 0;
-}
-
-#slide8 #teamphoto {
-	margin-bottom: 20px;
-}
-
 
 /* Slide 9 - Team detail */
 
@@ -373,13 +421,13 @@ a:visited {
 	margin-top: 0;
 	padding-top: 0;
 	font-size: 1em;
-	text-align: left;
+	text-align: center;
 }
 #slide9 h1 {
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	color:#3d3e3e;
-	font-weight: 700;
+	font-weight: 600;
 }
 #slide9 h2 {
 	font-size: 1.8em;
@@ -391,6 +439,7 @@ a:visited {
 #slide9 .teamgrid {
 	margin-left: 0;
 	margin-bottom: 3%;
+	margin: 0 auto;
 }
 
 /* Div containing images to cross fade */
@@ -405,15 +454,9 @@ a:visited {
 	vertical-align: middle;
 	overflow: hidden;
 	margin-bottom: 10%;
+	border-radius: 100px;
 }
 
-#slide9 .name {
-	margin-top: 25%;
-	margin-bottom: 25%;
-	font-size: 1em;
-	background-color: #fff;
-	color: #3d3e3e;
-}
 
 #slide9 .name h2 {
 	font-size: 1.2em;
@@ -422,6 +465,15 @@ a:visited {
 	margin-bottom: 5px;
 	padding: 0;
 	line-height: 1em;
+}
+
+#slide9 .name {
+	margin-top: 25%;
+	margin-bottom: 25%;
+	font-size: .9em;
+	font-weight: 300;
+	background-color: #fff;
+	color: #3d3e3e;
 }
 
 #slide9 .memberphoto {
@@ -434,12 +486,13 @@ a:visited {
 
 /* Slide down div containing member information */
 #slide9 #memberinfo {
+	text-align: left;
 	background: #252525;
 	color: #fff;
 	left: 0;
 	right: 0;
 	padding: 5%;
-	margin: 0;
+	margin: 0 auto;
 	margin-bottom: 2%;
 	display: none;
 	-moz-box-sizing: border-box;
@@ -506,19 +559,33 @@ a:visited {
 
 #slide10 h1 {
 	color: #fff;
+	font-size: 2em;
+	font-weight: 700;
+	display: inline;
 }
 
 #slide10 h2 {
 	font-size: 1.5em;
 	color: #f05557;
+	display: inline;
+}
+
+#slide10 #title {
+
+	margin-left: 20px;
 }
 
 #slide10 .project-orbit {
 	margin-bottom: 0;
+	margin-top: 20px;
 }
 
-#slide10 #project-5 {
-	display: none;
+#slide10 #projslidecontainer, #projdetail.row {
+	height: 400px;
+}
+
+#slide10 .projecttext {
+	margin-top: 50px;
 }
 
 /* Container for Orbit slideshow */
@@ -529,13 +596,26 @@ a:visited {
 }
 
 /* Orbit slideshow for projects */
-#slide10 .orbit-container .row{
-	margin-left: 50px;
-	margin-right: 50px;
+#slide10 .orbit-container{
 	height: 400px;
 }
 
-#slide10 .orbit-timer, .orbit-slide-number {
+#slide10 .orbit-container .row {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#slide10 .project-slideshow-div {
+	overflow: auto;
+	height: 400px;
+}
+
+/* Hide all project slideshows except the first one */
+#slide10 #show1, #show2, #show3, #show4, #show5, #show6, #show7 {
+	display: none;
+}
+
+#slide10 .orbit-timer, .orbit-slide-number, .orbit-bullets {
 	display: none;
 }
 
@@ -552,6 +632,8 @@ a:visited {
 	width: 100%;
 	white-space: nowrap;
 	text-align: center;
+	margin-top: 10px;
+	overflow: scroll;
 }
 
 /* Project divs within container */
@@ -587,6 +669,7 @@ a:visited {
 	margin-top: 40%;
 	margin-bottom: 30%;
 	font-size: .8em;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
@@ -596,6 +679,10 @@ a:visited {
 	border-radius: 100px;
 }
 
+#slide10 #projecttext {
+	margin-top: 100px;
+}
+
 /* Slide 11 - Contact */ 
 
 #slide11{
@@ -603,21 +690,27 @@ a:visited {
 	color:#ffffff;
 	padding-left: 80px;
 	letter-spacing: 0px;
+	text-align: center;
+	line-height: 1.5em;
 }
 #slide11 h1 {
-	font-size: 3.8em;
+	font-size: 2em;
 	color:#ffffff;
 	font-weight: 700;
 	line-height: 1.2em;
 }
 #slide11 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #ffffff;
 	font-weight: 700;
 }
 #slide11 h3{
 	color: #fff;
 	font-size: 1.3em;
+}
+
+#slide11 .row {
+	text-align: left;
 }
 #slide11 a, a:visited {
 	font-style: italic;
