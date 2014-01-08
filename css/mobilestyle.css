@@ -15,6 +15,38 @@
 	display: none;
 }
 
+/* Show top bar mobile navigation on smaller screens */
+.mobilenavigation {
+	display: inline-block;
+	text-transform: uppercase;
+	background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.sub-nav a {
+	font-size: .8em;
+	padding: 0;
+	letter-spacing: 0.1em;
+}
+
+.sub-nav li.active a {
+	color: #f05557;
+	background: transparent;
+	padding: 0;
+}
+
+.sub-nav li a:hover {
+	color: #fff;
+	background: transparent;
+	padding: 0;
+}
+
+.sub-nav ul {display: table; margin: 0 auto;}
+.sub-nav ul li {display: table-cell;}
+
+/* SLIDE 1 - Quotes */
 #slide1 {
 	padding-top: 40%;
 }
@@ -23,17 +55,54 @@
 }
 #slide1 h2 {
 }
+#slide1 #logo {
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+}
+#slide1 .block {
+	text-align: center;
+    margin: 20px;
+    height: 200px;
+}
 
+#slide1 .block:before {
+	content: '';
+	display: inline-block;
+	height: 170%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+
+#slide1 .quotes {
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	padding: 10px;
+	background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    margin-top: -80px;
+}
+
+#slide1 .quotes h1 {
+	font-size: 1.4em;
+}
+
+/* SLIDE 2 - About */
 #slide2 {
 	padding-left: 20px;
 }
 #slide2 h1 {
+	font-size: 1.5em;
+	margin-top: 20px;
 }
 #slide2 h2 {
 }
 
+/* SLIDE 3 - Services */
 #slide3 {
-	padding-left: 20px;
+	
 }
 #slide3 {
 	background-image: none;
@@ -43,14 +112,151 @@
 #slide3 h2 {
 }
 
+/* SLIDE 4 - ANalyze */
 #slide4 {
-	padding-left: 20px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 #slide4 h1 {
+	font-size: 1.4em;
 }
 #slide4 h2 {
+	font-size: 1em;
 }
 
+/* SLIDE 5 - Design */
+#slide5 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#slide5 h1 {
+	font-size: 1.5em;
+}
+#slide5 h2 {
+	font-size: 1.2em;
+
+}
+
+/* SLIDE 6 - Experiment */
+#slide6 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+#slide6 h1 {
+	font-size: 1.4em;
+}
+#slide6 h2 {
+	font-size: 1em;
+}
+#slide6 img {
+	margin: 0;
+	text-align: center;
+}
+#slide6 .columns {
+	text-align: center;
+}
+
+/* SLIDE 7 - Build */
+#slide7 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
+#slide7 h1 {
+	font-size: 1.5em;
+}
+#slide7 h2 {
+	font-size: 1.2em;
+
+}
+
+/* SLIDE 8 - Team */
+#slide8 {
+	
+}
+#slide8 h1 {
+}
+#slide8 h2 {
+
+}
+
+/* SLIDE 9 - Team Detail */
+#slide9 {
+	
+}
+#slide9 h1 {
+}
+#slide9 h2 {
+
+}
+
+/* SLIDE 10 - Project Portfolio */
+#slide10 {
+	
+}
+#slide10 h1 {
+}
+#slide10 h2 {
+
+}
+/* Hide embedded video on small screens */
+#slide10 .video {
+	display: none;
+}
+#slide10 .smallvideo {
+	display: inline-block;
+	text-align: center;
+	font-size: .8em;
+}
+#slide10 .contacticon {
+	text-align: center;
+	width: 50px;
+	margin-left: 40%;
+}
+
+
+#slide10 .project-orbit,  #projectdetail {
+	height: auto;
+}
+
+#slide10 .orbit-container {
+	background-color: #f05557;
+}
+
+#slide10 .orbit-caption {
+	background: transparent;
+	padding-left: 30px;
+	width: 130%;
+	font-size: .8em;
+}
+
+/* Container for Orbit slideshow */
+#slide10 .orbit-container .orbit-slides-container > * {
+	max-width: 300px;
+	margin-bottom: 10px;
+	height: auto;
+	float: left;
+}
+
+#slide10 .orbit-container img {
+	opacity: 0;
+}
+
+/* SLIDE 11 - Contact */
+#slide11 {
+	padding-top: 50px;
+}
+#slide11 h1 {
+}
+#slide11 h3 {
+	margin-top: 20px;
+}
+#slide11 #tweetz {
+	display: block;
+	margin-top: 10px;
+}
 
 }
 

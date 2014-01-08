@@ -20,20 +20,34 @@
   </head>
   <body>
 
-  <!-- Magellan sticky nav (Foundation) -->
+  <!-- Magellan sticky nav (Foundation) 
+        Navigation for larger screens -->
   <div data-magellan-expedition="fixed" class="navigation">
       <ul class="side-nav">
-        <li data-magellan-arrival="slide1" data-slide="1"><a href="#"></a></li>
-        <li data-magellan-arrival="slide2" data-slide="2"><a href="#"></a></li>
-        <li data-magellan-arrival="slide3" data-slide="3"><a href="#"></a></li>
-        <li data-magellan-arrival="slide4" data-slide="4"><a href="#"></a></li>
-        <li data-magellan-arrival="slide5" data-slide="5"><a href="#"></a></li>
-        <li data-magellan-arrival="slide6" data-slide="6"><a href="#"></a></li>
-        <li data-magellan-arrival="slide7" data-slide="7"><a href="#"></a></li>
-        <li data-magellan-arrival="slide8" data-slide="8"><a href="#"></a></li>
-        <li data-magellan-arrival="slide9" data-slide="9"><a href="#"></a></li>
-        <li data-magellan-arrival="slide10" data-slide="10"><a href="#"></a></li>
-        <li data-magellan-arrival="slide11" data-slide="11"><a href="#"></a></li>
+        <li data-magellan-arrival="slide1" data-slide="1"><a href="#">Main</a></li>
+        <li data-magellan-arrival="slide2" data-slide="2"><a href="#">About</a></li>
+        <li data-magellan-arrival="slide3" data-slide="3"><a href="#">Services</a></li>
+        <li data-magellan-arrival="slide4" data-slide="4"><a href="#">Analyze</a></li>
+        <li data-magellan-arrival="slide5" data-slide="5"><a href="#">Design</a></li>
+        <li data-magellan-arrival="slide6" data-slide="6"><a href="#">Experiment</a></li>
+        <li data-magellan-arrival="slide7" data-slide="7"><a href="#">Build</a></li>
+        <li data-magellan-arrival="slide8" data-slide="8"><a href="#">Team</a></li>
+        <!--<li data-magellan-arrival="slide9" data-slide="9"><a href="#"></a></li>-->
+        <li data-magellan-arrival="slide10" data-slide="10"><a href="#">Portfolio</a></li>
+        <li data-magellan-arrival="slide11" data-slide="11"><a href="#">Contact</a></li>
+      </ul>
+  </div>
+
+  <!-- Magellan sticky nav for mobile screens -->
+  <div data-magellan-expedition="fixed" class="mobilenavigation">
+      <ul class="sub-nav">
+        <li data-magellan-arrival="slide1" data-slide="1"><a href="#slide1">Main</a></li>
+        <li data-magellan-arrival="slide2" data-slide="2"><a href="#slide2">About</a></li>
+        <li data-magellan-arrival="slide3" data-slide="3"><a href="#slide3">Services</a></li>
+        <li data-magellan-arrival="slide8" data-slide="8"><a href="#slide8">Team</a></li>
+        <!--<li data-magellan-arrival="slide9" data-slide="9"><a href="#"></a></li>-->
+        <li data-magellan-arrival="slide10" data-slide="10"><a href="#slide10">Portfolio</a></li>
+        <li data-magellan-arrival="slide11" data-slide="11"><a href="#slide11">Contact</a></li>
       </ul>
   </div>
 
@@ -61,7 +75,7 @@
   <div class="slide" name="slide2" id="slide2" data-slide="2" data-stellar-background-ratio="0.5" data-magellan-destination="slide2">
     <div class="container clearfix">
       <div class="row">
-      <div class="small-12 large-4 columns" id="about">
+      <div class="small-12 medium-6 large-4 columns" id="about">
         <h1>About Us</h1>
         Metabolic was born out of a desire to realize epic, groundbreaking projects that actively transition the world to a more equitable, sustainable state. We do things that maximize impact.  We aim to regenerate natural capital, strengthen social ties among people, and empower organizations to transition to a sustainable future. 
         <br><br>
@@ -69,14 +83,14 @@
       </div>
 
 
-      <div class="small-12 large-4 columns" id="philosophy">
+      <div class="small-12 medium-6 large-4 columns" id="philosophy">
         <h1>Philosophy</h1>
         We believe in democratizing technology. We design solutions to be affordable and accessible. Most of our work is published open source to encourage replication and fast adoption. 
         <br><br>
         We feel the need to move beyond incremental change. This requires continuously researching, prototyping, and implementing ideas that result in holistic and replicable systems for a sustainable society.
       </div>
 
-      <div class="small-12 large-4 columns" id="howwork">
+      <div class="small-12 medium-6 large-4 columns" id="howwork">
 
         <h1>How We Work</h1>
           Metabolic is powered by a cooperative of multi-disciplinary entrepreneurs who analyze, design, experiment, and build disruptive solutions. We aim to regenerate natural capital, strengthen social ties among people, and empower organizations to transition to a new future. 
@@ -173,7 +187,7 @@
       <h1>Experiment: Symbioculture</h1>
       <h2>We are working with Dutch greenhouse farmers to pilot and experiment elements of symbioculture, an approach to agriculture that creates robust, symbiotic ecosystems that maximize yields of food, medicine, and materials.</h2>
       </div>
-      <div class="small-12 medium-4 large-4 columns" style="text-align: left;">
+      <div class="small-12 medium-4 large-4 columns">
       <img src="img/services/symbioculture.jpg" alt="Symbioculture">
       </div>
     </div><!-- End row-->
@@ -241,19 +255,19 @@
         </div>
         <div class="small-6 medium-3 large-2 columns">
             <div class="image">
-              <div class="name"><h2>Chris<br>Monaghan</h2>COO</div>
+              <div class="name"><h2>Chris<br>Monaghan</h2>Chief of<br>Operations</div>
               <img src="img/slide9/chris.jpg" class="memberphoto" id="Chris" />
             </div>
         </div>
         <div class="small-6 medium-3 large-2 columns">
             <div class="image">
-              <div class="name"><h2>Sanderine<br>van Odijk</h2>CFO</div>
+              <div class="name"><h2>Sanderine<br>van Odijk</h2>Chief Financial<br>Officer</div>
               <img src="img/slide9/sanderine.jpg" class="memberphoto" id="Sanderine" />
             </div>
         </div>
         <div class="small-6 medium-3 large-2 columns">
             <div class="image">
-              <div class="name"><h2>Matthew<br>Fraser</h2>Director of Consulting</div>
+              <div class="name"><h2>Matthew<br>Fraser</h2>Director of<br>Consulting</div>
               <img src="img/slide9/matthew.jpg" class="memberphoto" id="Matthew" />
             </div>
         </div>
@@ -302,7 +316,7 @@
         <div class="small-6 medium-3 large-2 columns">
             <div class="image">
               <div class="name"><h2>Eike<br>Schramm</h2>Financial Manager</div>
-              <img src="img/slide9/sloth.jpg" class="memberphoto" id="Eike" />
+              <img src="img/slide9/eike.jpg" class="memberphoto" id="Eike" />
             </div>
         </div>
         <div class="small-6 medium-3 large-2 columns" style="float: left;">
@@ -338,9 +352,10 @@
   <div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5" data-magellan-destination="slide10">
     <div class="container clearfix">
     <div class="row">
-      <div class="small-12 large-12 columns"><h1>Project Portfolio</h1><h2 id="title">Cleantech Playground: Sustainable built environments</h2></div>
+      <div class="small-12 large-12 columns"><h1>Project Portfolio</h1>
+      <h2 id="title">Cleantech Playground: Sustainable built environments</h2></div>
     </div>
-      <div id="projslidecontainer">
+      <!--<div id="projslidecontainer">-->
       <div class="row" id="projectdetail">
 
         <!-- Project detail slideshows -->
@@ -349,59 +364,47 @@
         <div id="show0" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
             <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/ctp/ctp01.jpg"></div>
+              <img src="img/projects/ctp/ctp01.jpg" alt="slide1">
             <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
+              <div class="orbit-caption">
                 <span class="projecttext">The Cleantech Playground serves as a new blueprint for urban development, where decentralized technologies and full recycling of local resources empowers urban areas to be self-sufficient.</span>
               </div>
-            </div><!-- End row -->
+            <!--</div><!-- End row -->
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/ctp/ctp02.jpg"></div>
+            <img src="img/projects/ctp/ctp02.jpg">
             <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
+            <div class="orbit-caption">
                 <span class="projecttext">The Cleantech Playground was the title of a design and feasibility study of closed cycle, sustainable built environments. Metabolic specifically focused on two neighborhoods in Amsterdam. We published the report in February 2013 with Innovatie Netwerk, part of the Dutch Ministry of Economic Affairs. <a href="http://innovatienetwerk.onlinetouch.nl/216">Click here</a> to read the full report.</span>
-              </div>
-            </div><!-- End row -->
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/ctp/ctp03.jpg"></div>
+            <img src="img/projects/ctp/ctp03.jpg">
             <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
+              <div class="orbit-caption">
                 <span class="projecttext">The concept details how nutrients, energy, and water can be recycled on-site to maximize efficiency of resources. The concept explores the role decentralized technologies play in a resilient urban metabolism.</span>
               </div>
-            </div><!-- End row -->
           </li>
           <li data-orbit-slide="Project-4">
-            <div class="row">
+            <!--<div class="row">
             <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><iframe src="//www.youtube.com/embed/PmO2UXvhcVg" frameborder="0" allowfullscreen></iframe></div>
+              <!--<div class="small-12 large-8 columns video"><iframe width="520" height="400" src="//www.youtube.com/embed/PmO2UXvhcVg" frameborder="0" allowfullscreen></iframe></div>
+              <div class="small-12 large-12 columns smallvideo"><a href="http://www.youtube.com/watch?feature=player_embedded&v=PmO2UXvhcVg"><img src="img/contact/icon_yt.png" alt="Metabolic on YouTube" class="contacticon"></a></div>
             <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
+              <!--<div class="small-12 large-4 columns videocaption">
                 <h2 class="subtitle"></h2>
                 <span class="projecttext">The approach of the Cleantech Playground involves community members and local stakeholders to build clean technologies and part of their own dwellings. This reduces costs, transfers knowledge, and creates group cohesion.</span>
               </div>
             </div><!-- End row -->
+            <div class="flex-video widescreen vimeo"><iframe height="200" src="//www.youtube.com/embed/PmO2UXvhcVg" frameborder="0" allowfullscreen></iframe></div>
           </li>
           <li data-orbit-slide="Project-5">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/ctp/ctp05.jpg"></div>
+            <img src="img/projects/ctp/ctp05.jpg">
             <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
+              <div class="orbit-caption">
                 <span class="projecttext">The Cleantech Playground is being applied at the de Ceuvel site in Amsterdam North, creating both a decentralized cleantech utility and a demonstration and testing site for new technologies that can transform how we produce and consume resources and public services in cities.</span>
               </div>
-            </div><!-- End row -->
           </li>
         </ul> <!-- End Cleantech Playground slideshow -->
         </div>
@@ -410,59 +413,40 @@
         <div id="show1" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/deceuvel/deceuvel01.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
-                <span class="projecttext">The de Ceuvel development is on a plot of polluted land that will be cleaned using plants (phytoremediation). The buildings on the site will consist of retrofitted houseboats, upgraded to a high level of energy performance.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/deceuvel/deceuvel01.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">The de Ceuvel development is on a plot of polluted land that will be cleaned using plants (phytoremediation). The buildings on the site will consist of retrofitted houseboats, upgraded to a high level of energy performance.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/deceuvel/deceuvel02.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">De Ceuvel includes 15 houseboats placed on land and a teahouse that enables creative entrepreneurs, architects, and artists to work in a sustainable environment</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/deceuvel/deceuvel02.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">De Ceuvel includes 15 houseboats placed on land and a teahouse that enables creative entrepreneurs, architects, and artists to work in a sustainable environment</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/deceuvel/deceuvel03.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Throughout the site, solar technologies will convert energy from the sun into heat and electricity. Green roofs and water collection systems are designed to collect, purify, and store rainwater for when it’s needed. Sanitation systems will extract energy, nutrients, and water from the waste produced for on-site food production. A network of sensors provide information on performance and user behavior. The site will serve as a “Cleantech Playground” where new technologies can be tested, building a pathway for their broader adoption.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/deceuvel/deceuvel03.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Throughout the site, solar technologies will convert energy from the sun into heat and electricity. Green roofs and water collection systems are designed to collect, purify, and store rainwater for when it’s needed. Sanitation systems will extract energy, nutrients, and water from the waste produced for on-site food production. A network of sensors provide information on performance and user behavior. The site will serve as a “Cleantech Playground” where new technologies can be tested, building a pathway for their broader adoption.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-4">
-            <div class="row">
+            <!--<div class="row">
             <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><iframe src="//www.youtube.com/embed/0i6zCY1PhDA" frameborder="0" allowfullscreen></iframe></div>
+              <!--<div class="small-12 large-8 columns video"><iframe width="520" height="400" src="//www.youtube.com/embed/0i6zCY1PhDA" frameborder="0" allowfullscreen></iframe></div>
+              <div class="small-12 large-12 columns smallvideo"><a href="//www.youtube.com/embed/0i6zCY1PhDA"><img src="img/contact/icon_yt.png" alt="Metabolic on YouTube" class="contacticon"></a></div>
             <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
+              <!--<div class="small-12 large-4 columns">
                 <span class="projecttext">In late October, 2013, the retrofitted houseboats were craned onto the de Ceuvel site.</span>
               </div>
             </div><!-- End row -->
+            <div class="flex-video widescreen vimeo"><iframe height="200" src="//www.youtube.com/embed/0i6zCY1PhDA" frameborder="0" allowfullscreen></iframe></div>
           </li>
           <li data-orbit-slide="Project-5">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/deceuvel/deceuvel05.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
+            <img src="img/projects/deceuvel/deceuvel05.jpg">
+            <div class="orbit-caption">
                 <span class="projecttext">The de Ceuvel neighborhood has involved a variety of public and private partners to explore new opportunities for applied research for a sustainable built environment.</span>
-              </div>
-            </div><!-- End row -->
+            </div>
           </li>
         </ul> <!-- End De Ceuvel slideshow -->
         </div>
@@ -471,59 +455,34 @@
         <div id="show2" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/whale2.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
-                <span class="projecttext">Metabolic works with partner Circle Economy to analyze and map opportunities and strategies for improving circularity at a regional level.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/whale2.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Metabolic works with partner Circle Economy to analyze and map opportunities and strategies for improving circularity at a regional level.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/whale2.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">With the Circle Economy, we have developed the Circle Scan - a process and methodology that identifies key impact areas and helps organisations quickly identify and realize a circular project.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/whale2.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">With the Circle Economy, we have developed the Circle Scan - a process and methodology that identifies key impact areas and helps organisations quickly identify and realize a circular project.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/whale2.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">We work with a variety of organisations to identify their ambitions and capacity to realize a circular project. During our workshops with Circle Economy members, we use a systems thinking approach to identify and prioritize high impact opportunities.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/whale2.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">We work with a variety of organisations to identify their ambitions and capacity to realize a circular project. During our workshops with Circle Economy members, we use a systems thinking approach to identify and prioritize high impact opportunities.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-4">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Circle Economy member Xindao is an international producer of promotional products. We have helped them map out and prioritize a number of circular opportunities to pursue.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="">
+            <div class="orbit-caption">
+              <span class="projecttext">Circle Economy member Xindao is an international producer of promotional products. We have helped them map out and prioritize a number of circular opportunities to pursue.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-5">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">The built environment is responsible for a significant amount of impact globally. With the Circle Economy, we have helped re-developer OVG to investigate strategies to incorporate circular thinking into real-estate development.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="">
+            <div class="orbit-caption">
+              <span class="projecttext">The built environment is responsible for a significant amount of impact globally. With the Circle Economy, we have helped re-developer OVG to investigate strategies to incorporate circular thinking into real-estate development.</span>
+            </div>
           </li>
         </ul> <!-- End Circle Economy slideshow -->
         </div>
@@ -532,48 +491,28 @@
         <div id="show3" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/sensors/sensors01.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
-                <span class="projecttext">Metabolic is using existing sensors combined with our own micro-controller design to measure technology performance, environmental quality, and user behavior.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/sensors/sensors01.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Metabolic is using existing sensors combined with our own micro-controller design to measure technology performance, environmental quality, and user behavior.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/sensors/sensors02.png"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">We use sensors to automate urban farming systems, measure resource use in the built environment, and monitor air and water quality for cities.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/sensors/sensors02.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">We use sensors to automate urban farming systems, measure resource use in the built environment, and monitor air and water quality for cities.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/sensors/sensors03.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Metabolic develops new uses for sensors and automation at our workshop, Metabolic Works, located in Amsterdam North.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/sensors/sensors03.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Metabolic develops new uses for sensors and automation at our workshop, Metabolic Works, located in Amsterdam North.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-4">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/sensors/sensors04.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">We’re working to incorporate our sensing and automation systems in new applications that can make us more knowledgeable about our environments while we make our environments more responsive.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/sensors/sensors04.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">We’re working to incorporate our sensing and automation systems in new applications that can make us more knowledgeable about our environments while we make our environments more responsive.</span>
+            </div>
           </li>
         </ul> <!-- End Sensors slideshow -->
         </div>
@@ -582,42 +521,29 @@
         <div id="show4" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/overhoeks/overhoeks01.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
-                <span class="projecttext">The Overhoeks Tower is an iconic building in Amsterdam that used to be the headquarters of Royal Dutch Shell. It was bought with plans to transform it into a series of clubs, apartments, and restaurants. During this transition, it was opened up to unique start-ups and creative businesses who could make good use of the space in the interim.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/overhoeks/overhoeks01.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">The Overhoeks Tower is an iconic building in Amsterdam that used to be the headquarters of Royal Dutch Shell. It was bought with plans to transform it into a series of clubs, apartments, and restaurants. During this transition, it was opened up to unique start-ups and creative businesses who could make good use of the space in the interim.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/overhoeks/overhoeks02.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Metabolic transformed the first floor of the Overhoeks Tower into an open-plan co-working space and testing ground in the Summer of 2013.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/overhoeks/overhoeks02.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Metabolic transformed the first floor of the Overhoeks Tower into an open-plan co-working space and testing ground in the Summer of 2013.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-12 large-12 columns"><img src="img/projects/overhoeks/overhoeks03.jpg">
-                <h2 class="subtitle"></h2><br>
-                <span class="projecttext">The Overhoeks Tower served as Metabolic’s headquarters until we moved our offices to the New Energy Docks in November, 2013.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/overhoeks/overhoeks03.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">The Overhoeks Tower served as Metabolic’s headquarters until we moved our offices to the New Energy Docks in November, 2013.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-4">
             <div class="row">
             <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"></div>
+              <div class="small-12 large-7 columns"></div>
             <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
+              <div class="small-12 large-5 columns">
                 <h2 class="subtitle"></h2>
                 <span class="projecttext">A video of Metabolic in June shows us retrofitting the Overhoeks tower and preparing greywater treatment systems during the same weekend.</span>
               </div>
@@ -630,59 +556,34 @@
         <div id="show5" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/symbio/symbio01.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
-                <span class="projecttext">Symbioculture presents a radical departure from business as usual in agricultural production: rather than focusing on the idealized production of a single crop (as a monoculture), it instead proposes the production of many crops, fungi, livestock, and insects in a complex polyculture. It is designed to approximate some aspects of a natural ecosystem with self supporting plant and animal interactions, and the creation of ecological “niches” within the system the reduce need for mechanical and chemical interventions.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/symbio/symbio01.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Symbioculture presents a radical departure from business as usual in agricultural production: rather than focusing on the idealized production of a single crop (as a monoculture), it instead proposes the production of many crops, fungi, livestock, and insects in a complex polyculture. It is designed to approximate some aspects of a natural ecosystem with self supporting plant and animal interactions, and the creation of ecological “niches” within the system the reduce need for mechanical and chemical interventions.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/symbio/symbio02.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Metabolic is currently applying the concept of Symbioculture in the Netherlands with a Dutch growers in partnership with Innovatie Netwerk and Rabobank.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/symbio/symbio02.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Metabolic is currently applying the concept of Symbioculture in the Netherlands with a Dutch growers in partnership with Innovatie Netwerk and Rabobank.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/symbio/symbio03.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">‘Polydome Applied’ illustrates the practical application of symbiotic agricultural (symbioculture) systems that maximize food output, eliminate environmental impact, connect biophysical and social flows, and create meaningful jobs. <a href="http://innovatienetwerk.onlinetouch.nl/223">Read the full report online</a></span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/symbio/symbio03.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">‘Polydome Applied’ illustrates the practical application of symbiotic agricultural (symbioculture) systems that maximize food output, eliminate environmental impact, connect biophysical and social flows, and create meaningful jobs. <a href="http://innovatienetwerk.onlinetouch.nl/223">Read the full report online</a></span>
+            </div>
           </li>
           <li data-orbit-slide="Project-4">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/symbio/symbio04.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Metabolic is also applying symbioculture to urban agriculture. The Symbiotic Agro-Makery (SAM) is low-cost system that supports the production of mushrooms, fish, herbs, and greens, while including electricity-powered logistics and a community gathering place.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/symbio/symbio04.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Metabolic is also applying symbioculture to urban agriculture. The Symbiotic Agro-Makery (SAM) is low-cost system that supports the production of mushrooms, fish, herbs, and greens, while including electricity-powered logistics and a community gathering place.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-5">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/symbio/symbio05.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">SAM cascades energy, nutrients, and gasses throughout the system. It is designed to maximize the synergies that result from integrating cycles of material and energy.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/symbio/symbio05.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">SAM cascades energy, nutrients, and gasses throughout the system. It is designed to maximize the synergies that result from integrating cycles of material and energy.</span>
+            </div>
           </li>
         </ul> <!-- End Symbioculture slideshow -->
         </div>
@@ -691,37 +592,22 @@
         <div id="show6" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/thai/thai01.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
-                <span class="projecttext">Thailab works with communities in Chiang Mai. Thailand to improve access to basic services like water, sanitation, energy, food, and shelter. We combine local knowledge of available material, needs, and preferences with expert advice and open-source designs to build Do-It-Yourself (DIY) technologies that are useful, affordable, and replicable.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/thai/thai01.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Thailab works with communities in Chiang Mai. Thailand to improve access to basic services like water, sanitation, energy, food, and shelter. We combine local knowledge of available material, needs, and preferences with expert advice and open-source designs to build Do-It-Yourself (DIY) technologies that are useful, affordable, and replicable.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/thai/thai02.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Current challenges call for new forms of sustainable development. Wastewater treatment is painfully inadequate in Thailand, exacerbating problems that come with flooding and water pollution.  The urban poor need to be must be given the right empowerment to improve their quality of life.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/thai/thai02.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Current challenges call for new forms of sustainable development. Wastewater treatment is painfully inadequate in Thailand, exacerbating problems that come with flooding and water pollution.  The urban poor need to be must be given the right empowerment to improve their quality of life.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/thai/thai03.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Thailab is the first project by Metabolic Foundation, a non-profit arm of Metabolic. It is the result of 10 months of on-the-ground research by 2 researchers from Utrecht University.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/thai/thai03.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Thailab is the first project by Metabolic Foundation, a non-profit arm of Metabolic. It is the result of 10 months of on-the-ground research by 2 researchers from Utrecht University.</span>
+            </div>
             </li>
         </ul> <!-- End Thailab slideshow -->
         </div>
@@ -730,92 +616,74 @@
         <div id="show7" class="project-slideshow-div">
         <ul class="project-orbit" data-orbit>
           <li data-orbit-slide="Project-1">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns" id="img-1"><img src="img/projects/window/window01.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle">??</h2>
-                <span class="projecttext">Metabolic is developing an automated window farming system that is productive, beautiful, customizable, and easy to use.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/window/window01.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Metabolic is developing an automated window farming system that is productive, beautiful, customizable, and easy to use.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-2">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/window/window02.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">The technical system combines aeroponics and sensors to make farming in the home simple but engaging.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/window/window02.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">The technical system combines aeroponics and sensors to make farming in the home simple but engaging.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-3">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/window/window03.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">Our technical team has been exploring ways to automate and monitor the window farm at low cost.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/window/window03.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">Our technical team has been exploring ways to automate and monitor the window farm at low cost.</span>
+            </div>
           </li>
           <li data-orbit-slide="Project-4">
-            <div class="row">
-            <!-- Div to contain image or video -->
-              <div class="small-7 large-7 columns"><img src="img/projects/window/window04.jpg"></div>
-            <!-- Div to contain title and text -->
-              <div class="small-5 large-5 columns">
-                <h2 class="subtitle"></h2>
-                <span class="projecttext">In the Summer of 2013, we began building prototypes to improve the product’s functionality and aesthetics.</span>
-              </div>
-            </div><!-- End row -->
+            <img src="img/projects/window/window04.jpg">
+            <div class="orbit-caption">
+              <span class="projecttext">In the Summer of 2013, we began building prototypes to improve the product’s functionality and aesthetics.</span>
+            </div>
           </li>
         </ul> <!-- End Window Farm slideshow -->
         </div>
 
         
       </div><!-- End project detail row-->
-      </div><!-- End project slider container -->
+      <!-- </div>End project slider container -->
 
       <!-- Side scrolling div of projects -->
-      <div id="project_container">
-        <div class="project" id="0">
-          <div class="name" style="margin-top: -5%"><h2>Cleantech<br>Playground</h2></div>
-          <img src="img/projects/ctp.jpg">
-        </div>
-        <div class="project" id="1">
-          <div class="name"><h2>De Ceuvel</h2></div>
-          <img src="img/projects/deceuvel.jpg">
-        </div>
-        <div class="project" id="2">
-          <div class="name" style="margin-top: -5%"><h2>Circle<br>Economy</h2></div>
-          <img src="img/projects/ce.jpg">
-        </div>
-        <div class="project" id="3">
-          <div class="name"><h2>Sensors</h2></div>
-          <img src="img/projects/sensors.jpg">
-        </div>
-        <div class="project" id="4">
-          <div class="name" style="margin-top: -5%"><h2>Overhoeks<br>Toren</h2></div>
-          <img src="img/projects/overhoeks.jpg">
-        </div>
-        <div class="project" id="5">
-          <div class="name" style="margin-top: -5%"><h2>Symbio-<br>culture</h2></div>
-          <img src="img/projects/symbio.jpg">
-        </div>
-        <div class="project" id="6">
-          <div class="name"><h2>Thailab</h2></div>
-          <img src="img/projects/thai.jpg">
-        </div>
-        <div class="project" id="7">
-          <div class="name" style="margin-top: -5%"><h2>Window<br>Farm</h2></div>
-          <img src="img/projects/window.jpg">
-        </div>
-      </div><!-- End project container -->
-
+      <div class="row" id="project_container">
+      <div class="small-12 columns">
+        <ul class="small-block-grid-3 medium-block-grid-8 large-block-grid-8">
+          <li class="project" id="0">
+            <div class="name" style="margin-top: -5%"><h2>Cleantech<br>Playground</h2></div>
+            <img src="img/projects/ctp.jpg">
+          </li>
+          <li class="project" id="1">
+            <div class="name"><h2>De Ceuvel</h2></div>
+            <img src="img/projects/deceuvel.jpg">
+          </li>
+          <li class="project" id="2">
+            <div class="name" style="margin-top: -5%"><h2>Circle<br>Economy</h2></div>
+            <img src="img/projects/ce.jpg">
+          </li>
+          <li class="project" id="3">
+            <div class="name"><h2>Sensors</h2></div>
+            <img src="img/projects/sensors.jpg">
+          </li>
+          <li class="project" id="4">
+            <div class="name" style="margin-top: -5%"><h2>Overhoeks<br>Toren</h2></div>
+            <img src="img/projects/overhoeks.jpg">
+          </li>
+          <li class="project" id="5">
+            <div class="name" style="margin-top: -5%"><h2>Symbio-<br>culture</h2></div>
+            <img src="img/projects/symbio.jpg">
+          </li>
+          <li class="project" id="6">
+            <div class="name"><h2>Thailab</h2></div>
+            <img src="img/projects/thai.jpg">
+          </li>
+          <li class="project" id="7">
+            <div class="name" style="margin-top: -5%"><h2>Window<br>Farm</h2></div>
+            <img src="img/projects/window.jpg">
+          </li>
+        </ul><!-- End project container -->
+        </div></div>
     </div><!-- End clearfix -->
   </div><!-- End Slide 10 -->
 
@@ -851,7 +719,7 @@
           <a href="https://www.facebook.com/metabolics"><img src="img/contact/icon_fb.png" alt="Metabolic on Facebook" class="contacticon"></a>
           <a href="http://www.youtube.com/channel/UCBnxy4z5_smmcZs49co764w"><img src="img/contact/icon_yt.png" alt="Metabolic on YouTube" class="contacticon"></a>
       </div>
-      <div class="small-6 medium-3 large-4 columns">
+      <div class="small-6 medium-3 large-4 columns" id="tweetz">
         <!-- Twitter feed -->
         <h3><a class="twitter-timeline" href="https://twitter.com/MetabolicHQ" data-widget-id="396612890523738112">Tweets by @MetabolicHQ</a></h3>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -866,6 +734,7 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.magellan.js"></script>
     <script src="js/foundation/foundation.orbit.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
     <script type="text/javascript" src="js/waypoints.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -873,6 +742,7 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/team.js"></script>
     <script type="text/javascript" src="js/projects.js"></script>
+
     <script>
       jQuery(document).foundation({
         orbit : {

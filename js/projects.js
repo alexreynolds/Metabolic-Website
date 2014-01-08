@@ -126,13 +126,31 @@ jQuery(document).ready(function ($) {
 		},
 	];
 
+
+
+	// Get rid of empty space below orbit slider
+	var height = $('#projectdetail li.active').height();
+	var width = $('#projectdetail li.active').width();
+
+	// Reset height of container
+	$('div.orbit-container').height(height);
+
+	// Updates STUPID ORBIT SLIDER height on window resize 
+
+	$(window).on('resize', function() {
+		height = $('#projectdetail li.active').height();
+		// Reset height
+		$('div.orbit-container').height(height);
+	});
+
+
 	// Shows project name div when project image is hovered over
 	$('.project').hover(function() {
         $(this).children('img').animate({opacity: 0.2}, 800);	// Dim image
-        $(this).children('.name').animate({opacity: 1}, 800);	// Show name
+        //$(this).children('.name').animate({opacity: 1}, 800);	// Show name
 	}, function() {
 		$(this).children('img').animate({opacity: 1}, 800);
-		$(this).children('.name').animate({opacity: 0}, 800);
+		//$(this).children('.name').animate({opacity: 0}, 800);
 	});
 
 	// Edits & shows/hides the project information div when image is clicked
@@ -175,6 +193,10 @@ jQuery(document).ready(function ($) {
 
 		$(projectId).css('display', 'block');
 
+		var containerId = projectId + " .project-orbit";
+
+		$(containerId).css('height', '400px');
+
 		// Iterates through all slides of Orbit slideshow and updates information
 		/*
 		for (var i = 0; i < 5; i++) {
@@ -200,14 +222,10 @@ jQuery(document).ready(function ($) {
 
 		} */
 
-		// Hide the previous slideshow div and display the new one
-
 	}
 
 
-
-
-
+	
 
 
 

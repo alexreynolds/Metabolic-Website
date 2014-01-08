@@ -5,7 +5,7 @@
 	background-attachment: fixed;
 	width:100%;
 	position: relative;
-	padding-left:80px;
+	padding-left:180px;
 	padding-right: 30px;
 }
 
@@ -30,7 +30,7 @@
 
 
 #slide2 h1 {
-	font-size: 3em;
+	font-size: 2em;
 }
 #slide2 h2 {
 	font-size: 1.8em;
@@ -49,4 +49,19 @@
 #slide4 h2 {
 }
 
+}
+
+
+
+
+
+
+#slide10 #projslidecontainer, #projectdetail, .project-orbit {
+	height: auto;
+}
+
+/* Container for Orbit slideshow */
+#slide10 .orbit-container {
+	text-align: left;
+	height: auto;
 }

@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
     $(window).stellar();
 
     var links = $('.side-nav').find('li');
+    var mobilelinks = $('.sub-nav').find('li'); // Links for mobile navigation
     slide = $('.slide');
     button = $('.button');
     mywindow = $(window);
@@ -139,23 +140,29 @@ jQuery(document).ready(function ($) {
 
     // Hide navigation when down arrow is reached
     $('#downarrow').waypoint(function() {
-        $('.navigation').animate({ left: '0px' }, 200);
+        $('.navigation').animate({ left: '-40px' }, 200);
     })
 
     // Navigation bar is only shown once the user scrolls past first slide
     slide2.waypoint(function() {
-        $('.navigation').animate({ left: '0px' }, 200);
+        $('.navigation').animate({ left: '-40px' }, 200);
     });
 
     // Navigation is hidden if user goes back to slide 1
     slide1.waypoint(function() {
         // SHOULD CHANGE WAYPOINT TO THE TEXT ON THE SLIDE
         //$('.navigation').hide();
-        $('.navigation').animate({ left: '-70px' }, 200);
+        $('.navigation').animate({ left: '-210px' }, 200);
     });
 
 
     links.click(function (e) {
+        e.preventDefault();
+        dataslide = $(this).attr('data-slide');
+        goToByScroll(dataslide);
+    });
+
+    mobilelinks.click(function (e) {
         e.preventDefault();
         dataslide = $(this).attr('data-slide');
         goToByScroll(dataslide);
